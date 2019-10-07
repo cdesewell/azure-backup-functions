@@ -36,6 +36,3 @@ The function requires a local.settings.json file for local development, this loo
 }
 ```
 The properties in the ```Values``` block have to set as application settings in the azure function app.
-
-# Deployments
-There is no CI pipeline for these functions as they rarely have to be changed, usually an update is deployed/published straight from visual studio to the function app named CoyoteBlobBackup. The function app can be found in the PaaS resource group.
