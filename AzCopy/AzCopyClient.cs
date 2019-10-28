@@ -50,8 +50,13 @@ namespace AzCopy
                 writer.Write(blobBody);
                 writer.Flush();
                 stream.Position = 0;
-
-                await TransferManager.UploadAsync(stream, blob);
+                
+                var transferContext = new SingleTransferContext
+                {
+                    ShouldOverwriteCallbackAsync = TransferContext.ForceOverwrite
+                };
+                
+                await TransferManager.UploadAsync(stream, blob,null,transferContext);
             }
         }
     }
