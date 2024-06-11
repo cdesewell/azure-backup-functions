@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Azure.Services.AppAuthentication" Version="1.2.0-preview2" />
-    <PackageReference Include="Microsoft.Azure.Storage.DataMovement" Version="0.10.1" />
+    <PackageReference Include="Microsoft.Azure.Storage.DataMovement" Version="2.0.5" />
   </ItemGroup>
 
 </Project>
